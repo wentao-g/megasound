@@ -1,0 +1,39 @@
+/*
+Page-navigation Area Style
+======================================================*/
+.pagination {
+	padding-top: 15px;
+	li {
+		a {
+			text-decoration: none;
+			i {
+				width: 45px;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				border-radius: 50px;
+				background-color: #4A4A4A;
+				color: #0F1213;
+				font-size: 29px;
+				font-weight: 400;
+				transition: $transition;
+				display: inline-block;
+			}
+			&.active {
+				i {
+					background-color: $white;
+				}
+			}
+		}
+		span {
+			text-align: center;
+			display: inline-block;
+			width: 65px;
+			font-size: 18px;
+			font-family: $heading-font-family;
+			letter-spacing: 0.9px;
+			color: #A0A0A0;
+		}
+		
+	}
+}

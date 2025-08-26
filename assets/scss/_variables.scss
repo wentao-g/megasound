@@ -1,0 +1,35 @@
+/* Color Style
+============================================*/
+$body-bg: #020516; 
+$body-color: #A0A0A0; 
+$body-color-100: #A9A3AD; 
+$body-color-200: #A7AAAC; 
+$primary: #EB5939; 
+$secondary: #0C1300; 
+$secondary-100: #271A33; 
+$warning: #FBBB00; 
+$border-color: rgba(101, 152, 49, 0.23); 
+$dark: #000000;
+$border-color: #A0A0A0;
+$border-color-100: rgba(49, 47, 46, 0.78);
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$transition: all ease 0.5s;
+$border-radius-4: 4px;
+$body-font-family: "DM Sans", serif;
+$heading-font-family: "Righteous", serif;
+$tooltip-bg: #424661;
+$tooltip-color: #ffffff;
+
+/* Font Size Style
+============================================*/
+$font-size-root: null;
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * .875;
+$font-size-lg: $font-size-base * 1.25;
+
+$h1-font-size: $font-size-base * 2.5; // Updated 43.2px
+$h2-font-size: $font-size-base * 2.4; // Updated 36.8px
+$h3-font-size: $font-size-base * 1.4; // Updated 28.8px
+$h4-font-size: $font-size-base * 1.2; // Updated 22.4px
+$h5-font-size: $font-size-base * 1.1; // Updated 17.6px
+$h6-font-size: $font-size-base; // Updated 16px

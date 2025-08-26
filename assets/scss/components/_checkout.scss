@@ -1,0 +1,133 @@
+/* 
+Checkout Area Style
+=====================================================*/
+.checkout-wrap {
+	.billing-details {
+		padding: 30px;
+		border-radius: 10px;
+        background: rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(60px);
+		h3 {
+			margin-bottom: 20px;
+			position: relative;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $border-color;
+			font-size: 25px;
+			position: relative;
+		}
+		.form-group {
+			margin-bottom: 20px;
+			textarea {
+				padding-top: 13px;
+			}
+            &.textarea {
+                .form-icon {
+                    top: 22px;
+                }
+            }
+		}
+	}
+    .cart-total {
+        background: rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(60px);
+        border-radius: 10px;
+        padding: 30px;
+        h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            span {
+                color: var(--main-color);
+                float: right;
+            }
+        }
+        ul {
+            padding-left: 0;
+            margin-bottom: 20px;
+            list-style-type: none;
+            li {
+                text-align: right;
+                margin-bottom: 10px;
+                span {
+                    color: var(--heading-color);
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .default-btn {
+            width: 100%;
+            display: block;
+            padding: 15px 20px;
+            text-align: center;
+        }
+    }
+}
+
+
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .checkout-wrap {
+        .billing-details {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .checkout-wrap {
+        .cart-total {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .checkout-wrap {
+        .billing-details {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .checkout-wrap {
+        .cart-total {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+
+    .checkout-wrap {
+        .billing-details {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .checkout-wrap {
+        .cart-total {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}

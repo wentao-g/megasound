@@ -1,0 +1,345 @@
+/* Event Area Style
+============================================*/
+.upcoming-gigs-single-item {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(60px);
+    padding: 35px;
+    padding-right: 0;
+    margin-bottom: 30px;
+    position: relative;
+    img {
+        max-width: 341px;
+        border-radius: 20px 0 0 20px;
+    }
+    .upcoming-gigs-date {
+        margin-top: 25px;
+        margin-left: -25px;
+        .date {
+            color: $primary;
+            font-family: $heading-font-family;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 115%;
+            letter-spacing: -1.28px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .year {
+            color: #EB5939;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .upcoming-gigs-content {
+        margin-left: 38px;
+        margin-top: 10px;
+        .title {
+            font-family: $heading-font-family;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 166.667%;
+            letter-spacing: 0.36px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        h3 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 93.75%;
+            letter-spacing: -0.64px;
+            margin-bottom: 15px;
+            transition: $transition;
+        }
+        .time {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: normal;
+            display: block;
+            margin-bottom: 35px;
+        }
+        .share-btn {
+            text-decoration: none;
+            color: $white;
+            font-family: $heading-font-family;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.56px;
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+    .upcoming-gigs-img {
+        .price {
+            color: $body-color;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 93.75%;
+            letter-spacing: -0.64px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-bottom: 0;
+            left: -50px;
+        }
+    }
+    &:hover {
+        .upcoming-gigs-content {
+            h3 {
+                color: $primary;
+            }
+        }
+    }
+}
+.clockdiv {
+    margin-bottom: 30px;
+    .time {
+        text-align: center;
+        width: 147px;
+        height: 147px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.06);
+        padding: 47px 0;
+        .count {
+            color: $primary;
+            font-size: 64px;
+            font-weight: 500;
+            line-height: 46.875%;
+        }
+        .title {
+            color: $white;
+            font-family: $heading-font-family;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 166.667%;
+            letter-spacing: 0.36px;
+        }
+    }
+}
+.event-description-content {
+    .title {
+        display: block;
+        margin-bottom: 15px;
+    }
+    h6 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 166.667%;
+        letter-spacing: -0.48px;
+        margin-bottom: 40px;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0.4px;
+    }
+    ul {
+        li {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+}
+.tickets-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.tickets-info-single-item {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(60px);
+    padding: 40px 35px;
+    margin-bottom: 25px;
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 80%;
+        letter-spacing: 0.4px;
+        margin-bottom: 20px;
+    }
+    ul {
+        margin-bottom: 0;
+        li {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .upcoming-gigs-single-item {
+        padding: 20px;
+        .upcoming-gigs-date {
+            margin: 0;
+            margin-bottom: 20px;
+            .date {
+                font-size: 50px;
+                margin-bottom: 0;
+            }
+        }
+        .upcoming-gigs-content {
+            margin: 0;
+            .title {
+                font-size: 16px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            .d-flex.align-items-center.justify-content-center {
+                gap: 20px;
+            }
+        }
+        img {
+            max-width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .upcoming-gigs-single-item {
+        .upcoming-gigs-img {
+            .price {
+                left: 0;
+            }
+        }
+    }
+    .clockdiv {
+        .time {
+            width: 146px;
+            height: 120px;
+            .count {
+                font-size: 28px;
+            }
+            .title {
+                font-size: 14px;
+            }
+        }
+    }
+    .event-description-content {
+        h6 {
+            font-size: 18px;
+        }
+        ul {
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+    .tickets-title {
+        font-size: 18px;
+    }
+    .tickets-info-single-item {
+        padding: 20px;
+    }
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .upcoming-gigs-single-item {
+        padding: 30px;
+        .upcoming-gigs-date {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .upcoming-gigs-content {
+            margin: 0;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 20px;
+        }
+    }
+    .upcoming-gigs-single-item {
+        .upcoming-gigs-img {
+            .price {
+                left: 0;
+            }
+        }
+    }
+    .clockdiv {
+        .time {
+            width: 146px;
+            height: 120px;
+            .count {
+                font-size: 28px;
+            }
+            .title {
+                font-size: 14px;
+            }
+        }
+    }
+    .event-description-content {
+        h6 {
+            font-size: 18px;
+        }
+        ul {
+            li {
+                font-size: 18px;
+            }
+        }
+    }
+    .tickets-title {
+        font-size: 18px;
+    }
+    .tickets-info-single-item {
+        padding: 20px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+
+}
+
+/* Min width 1400px to Max width 1799px */
+@media only screen and (min-width : 1400px) and (max-width : 1799px) {
+
+}
+
+@media only screen and (max-width : 1199px) {
+
+}
+
+/* RTL Area Style
+============================================*/
+.rtl {
+   
+    .upcoming-gigs-single-item {
+        padding-right: 35px;
+        padding-left: 0;
+        img {
+            border-radius: 0 20px 20px 0;
+        }
+    }
+    .upcoming-gigs-img {
+        .price {
+            left: auto;
+            right: -50px;
+        }
+    }
+    
+}
