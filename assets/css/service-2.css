@@ -1,0 +1,80 @@
+.carousel-item img {
+  animation: zoomEffect 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* zoom in */
+  }
+  100% {
+    transform: scale(1); /* zoom out */
+  }
+}
+
+.content-area-1 .title {
+  background-image: linear-gradient(120deg, #0d1b2a 0%, #000000 100%);
+  background-color: transparent;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 15vh;
+}
+
+.content-area-1 .image-stack {
+  position: relative;
+  perspective: 1000px;
+  padding-bottom: 40vh;
+}
+
+.content-area-1 .image-stack .img {
+  aspect-ratio: 1 /1;
+  position: absolute;
+  height: 25vh;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transition: transform 0.5s ease, z-index 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.content-area-1 .image-stack .img-1 {
+  transform: translate(0%, 0%);
+  z-index: 1;
+}
+
+.content-area-1 .image-stack .img-2 {
+  transform: translate(calc(75%), calc(75%));
+  z-index: 2;
+}
+
+.content-area-1 .image-stack .img-3 {
+  transform: translate(calc(0%), calc(125%));
+  z-index: 3;
+}
+
+.accordion-item {
+  margin: 2rem; /* space between items */
+  border: 3px solid #dee2e6; /* define border */
+  border-radius: 0.5rem; /* rounded corners */
+  overflow: hidden; /* ensures border-radius applies to content */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* optional subtle shadow */
+}
+
+/* Optional: remove default border at accordion-header */
+.accordion-button {
+  border: none; /* remove inner borders */
+  border-radius: 0; /* remove Bootstrap rounding */
+}
+
+/* Optional: add separation for accordion-body */
+.accordion-body {
+  padding: 1rem; /* adjust as needed */
+}
+
+.accordion-collapse {
+  border-top: 1px solid #dee2e6;
+}

@@ -1,0 +1,112 @@
+.page-banner-content {
+  text-align: center;
+  padding: 152px 0;
+  position: relative;
+  z-index: 1;
+}
+.page-banner-content h2,
+.page-banner-content .h2 {
+  color: #fff;
+  font-family: "Righteous", serif !important;
+  font-size: 86px;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: -1.72px;
+}
+.page-banner-content .page-banner-shape {
+  position: absolute;
+  top: -85px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .page-banner-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #a0a0a0;
+    margin-bottom: 70px;
+  }
+  .page-banner-content h2,
+  .page-banner-content .h2 {
+    font-size: 35px;
+  }
+}
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .page-banner-content {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #a0a0a0;
+    margin-bottom: 70px;
+  }
+  .page-banner-content h2,
+  .page-banner-content .h2 {
+    font-size: 50px;
+  }
+}
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .page-banner-content h2,
+  .page-banner-content .h2 {
+    font-size: 70px;
+  }
+}
+
+
+.top-play-tabs {
+  padding-top: 6px;
+  margin-bottom: 50px;
+}
+.top-play-tabs .nav-item .nav-link {
+  color: #fff;
+  font-family: "Righteous", serif;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  padding: 18px 49px;
+  border: 0;
+  background-size: 0;
+  transition: all ease 0.5s;
+}
+.top-play-tabs .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background: #020516;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+.top-play-tabs .nav-item .nav-link.active {
+  background-size: 100%;
+}
+.top-play-tabs .nav-item .nav-link.active::before {
+  background: linear-gradient(0deg, rgba(15, 18, 19, 0.65) 0%, rgba(15, 18, 19, 0.65) 100%);
+}
+
+
+.blog-single-item {
+  margin-bottom: 45px;
+}
+.blog-single-item .blog-img{
+  object-fit: cover;
+  width: 100%
+}
+.blog-single-item .blog-img {
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+.blog-single-item .blog-content h3, .blog-single-item .blog-content .h3 {
+  border-top: 1px solid rgba(49, 47, 46, 0.78);
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
