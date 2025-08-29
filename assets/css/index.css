@@ -13,6 +13,7 @@
   font-family: "Righteous", serif;
   display: block;
   margin-bottom: 24px;
+  text-align: center;
 }
 .about-us-content h2,
 .about-us-content .h2 {
@@ -714,4 +715,9 @@ textarea {
   width: 100%;
   right: auto;
   left: 0;
+}
+
+/* footer text */
+.font-family-heading {
+  font-family: "Righteous", serif;
 }
