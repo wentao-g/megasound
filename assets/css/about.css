@@ -1,174 +1,119 @@
-.page-banner-content {
-  text-align: center;
-  padding: 152px 0;
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+
+.carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.page-banner-content h2,
-.page-banner-content .h2 {
-  color: #fff;
-  font-family: "Righteous", serif !important;
-  font-size: 86px;
-  font-weight: 400;
-  line-height: 115%;
-  letter-spacing: -1.72px;
-}
-.page-banner-content .page-banner-shape {
+
+.carousel-item .carousel-caption {
   position: absolute;
-  top: -85px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #fff;
+  max-width: 90%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.carousel-item .carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.carousel-item .carousel-caption .lead {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.carousel-item .carousel-caption .intro {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.content-area-2 {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.content-area-2 h2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  font-family: "Zeyada", Sans-serif !important;
+  font-size: 60px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.content-area-2 .content-wrapper .content-item {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.material-icons {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.material-icons::before,
+.material-icons::after {
+  content: "+++";
+  color: #fff;
+  font-weight: bold;
+}
+
+.artists-slide .swiper-slide {
+  width: 25%;
+}
+.artists-single-item {
+  text-align: center;
+  transform: scale(1);
+  transition: all ease 0.5s;
+  position: relative;
+  height: 80vh;
+  margin-bottom: 120px;
+  /* overflow: hidden; */
+}
+.artists-single-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.artists-single-item .artists-content {
+  margin-top: 30px;
+  position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  z-index: -1;
+  transition: all ease 0.5s;
+  opacity: 0;
 }
-/* Max width 767px */
-@media only screen and (max-width: 767px) {
-  .page-banner-content {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    border-bottom: 1px solid #a0a0a0;
-    margin-bottom: 70px;
-  }
-  .page-banner-content h2,
-  .page-banner-content .h2 {
-    font-size: 35px;
-  }
+.artists-single-item .artists-content h3,
+.artists-single-item .artists-content .h3 {
+  margin-bottom: 5px;
+  letter-spacing: 0.4px;
+  font-size: 20px;
 }
-/* Min width 768px to Max width 992px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .page-banner-content {
-    padding-top: 70px;
-    padding-bottom: 70px;
-    border-bottom: 1px solid #a0a0a0;
-    margin-bottom: 70px;
-  }
-  .page-banner-content h2,
-  .page-banner-content .h2 {
-    font-size: 50px;
-  }
-}
-/* Min width 992px to Max width 1199px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .page-banner-content h2,
-  .page-banner-content .h2 {
-    font-size: 70px;
-  }
-}
-
-
-.about-us-content {
-  margin: -8px 0;
-}
-.about-us-content .about-title {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  font-family: "Righteous", serif;
+.artists-single-item .artists-content span {
   display: block;
-  margin-bottom: 24px;
-}
-.about-us-content h2,
-.about-us-content .h2 {
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 1.22;
-  letter-spacing: -1.28px;
-  margin-bottom: 0;
-}
-.about-us-content h2 span,
-.about-us-content .h2 span {
-  color: #eb5939;
-}
-.about-content-top {
-  max-width: 850px;
-  margin: auto;
-}
-.about-content-top h1,
-.about-content-top .h1 {
-  color: #eb5939;
-  font-size: 250px;
-  font-weight: 400;
-  line-height: 0;
-  letter-spacing: -5px;
-  margin-bottom: 0;
-}
-.about-content-top p {
-  font-size: 24px;
+  margin-bottom: 10px;
+  font-size: 15px;
   font-weight: 500;
-  line-height: 133.333%;
 }
-.about-content {
-  max-width: 850px;
-  margin: auto;
+.artists-single-item:hover {
+  transform: scale(0.9);
 }
-.about-content h3,
-.about-content .h3 {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 88.889%;
-  letter-spacing: 1.44px;
-  margin-bottom: 25px;
-}
-.about-content .count {
-  font-family: "Righteous", serif;
-  font-weight: 400;
-  line-height: 160%; /* 160% */
-  letter-spacing: 0.4px;
-  position: relative;
-  top: 4px;
-  padding-right: 10px;
-}
-.about-content p {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
-}
-.about-content p .title {
-  font-family: "Righteous", serif;
-  font-weight: 400;
-  line-height: 160%; /* 160% */
-  letter-spacing: 0.4px;
-}
-.about-content ul li {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 32px;
-}
-/* Max width 767px */
-@media only screen and (max-width: 767px) {
-  .about-us-content .about-title {
-    margin-bottom: 15px;
-  }
-  .about-us-content h2,
-  .about-us-content .h2 {
-    font-size: 30px;
-  }
-  .about-content-top h1,
-  .about-content-top .h1 {
-    font-size: 50px;
-    line-height: normal;
-  }
-  .about-content-top p {
-    font-size: 20px;
-  }
-}
-/* Min width 768px to Max width 992px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .about-us-content .about-title {
-    margin-bottom: 15px;
-  }
-  .about-us-content h2,
-  .about-us-content .h2 {
-    font-size: 40px;
-  }
-}
-/* Min width 992px to Max width 1199px */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-us-content .about-title {
-    margin-bottom: 15px;
-  }
-  .about-us-content h2,
-  .about-us-content .h2 {
-    font-size: 50px;
-  }
+.artists-single-item:hover .artists-content {
+  bottom: -80px;
+  opacity: 1;
 }

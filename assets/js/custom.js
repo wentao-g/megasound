@@ -34,6 +34,39 @@ window.addEventListener("scroll", function () {
     }
   };
 
+  var swiper = new Swiper(".artists-slide", {
+    slidesPerView: 1,
+    spaceBetween: 12,
+    centeredSlides: false,
+    preventClicks: true,
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1440: {
+        slidesPerView: 3.5,
+      },
+      1600: {
+        slidesPerView: 4.5,
+      },
+    },
+  });
+
   // Podcasts And More Slide JS
   var swiper = new Swiper(".podcasts-and-more-slide", {
     slidesPerView: 1,
