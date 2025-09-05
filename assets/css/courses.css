@@ -1,0 +1,112 @@
+.course-single-item {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(60px);
+  padding: 35px;
+  padding-right: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+.course-single-item .course-img{
+  overflow: hidden;
+}
+.course-single-item img {
+  max-width: 341px;
+  border-radius: 20px 0 0 20px;
+}
+.course-single-item .course-date {
+  margin-top: 25px;
+}
+.course-single-item .course-date .date {
+  color: #EB5939;
+  font-family: "Righteous", serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: -1.28px;
+  display: block;
+  margin-bottom: 5px;
+}
+.course-single-item .course-date .year {
+  color: #EB5939;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+.course-single-item .course-content {
+  margin-top: 10px;
+}
+.course-single-item .course-content .title {
+  font-family: "Righteous", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 166.667%;
+  letter-spacing: 0.36px;
+  display: block;
+  margin-bottom: 12px;
+}
+.course-single-item .course-content h3, .course-single-item .course-content .h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 93.75%;
+  letter-spacing: -0.64px;
+  margin-bottom: 15px;
+  transition: all ease 0.5s;
+}
+.course-single-item .course-content .time {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-bottom: 35px;
+}
+.course-single-item:hover .course-content h3, .course-single-item:hover .course-content .h3 {
+  color: #EB5939;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .course-single-item {
+    padding: 20px;
+  }
+  .course-single-item .course-date {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .course-single-item .course-date .date {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  .course-single-item .course-content {
+    margin: 0;
+  }
+  .course-single-item .course-content .title {
+    font-size: 16px;
+  }
+  .course-single-item .course-content h3, .course-single-item .course-content .h3 {
+    font-size: 24px;
+  }
+  .course-single-item .course-content .d-flex.align-items-center.justify-content-center {
+    gap: 20px;
+  }
+  .course-single-item img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+}
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .course-single-item {
+    padding: 30px;
+  }
+  .course-single-item .course-date {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .course-single-item .course-content {
+    margin: 0;
+  }
+  .course-single-item img {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+}
