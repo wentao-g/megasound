@@ -91,14 +91,15 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.65),
-    rgba(0, 0, 0, 0.3)
-  ); /* smoother fade */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-/* Caption Wrapper */
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
 .carousel-item .carousel-caption {
   position: absolute;
   top: 50%;
@@ -106,53 +107,48 @@ h6 {
   transform: translate(-50%, -50%);
   z-index: 2;
   color: #fff;
-  max-width: 85%;
+  max-width: 90%;
   text-align: center;
-  padding: 30px 20px;
-  backdrop-filter: blur(4px); /* subtle glass effect */
-  border-radius: 15px;
+  padding: 20px;
 }
 
-/* Title */
-.carousel-item .carousel-caption h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem); /* responsive */
-  font-weight: 700;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-  color: #fff;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* make text pop */
-  background: rgba(0, 0, 0, 0.45);
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-family: "Zeyada", cursive, sans-serif !important;
-}
-
-/* Lead paragraph */
 .carousel-item .carousel-caption .lead {
-  font-size: 1.3rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+
 }
 
-/* Intro paragraph */
+.carousel-item .carousel-caption h2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: transparent;
+  font-family: "Zeyada", Sans-serif !important;
+    font-weight: 600;
+font-size: clamp(2rem, 5vw, 3.5rem); 
+  border-radius: 10px;
+}
+
 .carousel-item .carousel-caption .intro {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 20px 25px;
-  border-radius: 12px;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: transparent;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  line-height: 2;
+  border-radius: 10px;
+  padding: clamp(12px, 2vw, 20px);
 }
 
-/* Image */
-.carousel-item img {
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(90%); /* improves readability */
-}
+@media (min-width: 992px) {
+  .carousel-item .carousel-caption h2 {
+    font-weight: 700;
+    line-height: 1.3;
+  }
 
+  .carousel-item .carousel-caption .lead {
+    line-height: 1.6;
+  }
+
+  .carousel-item .carousel-caption .intro {
+    line-height: 1.8;
+  }
+}
 
 /* navbar */
 .navbar {
