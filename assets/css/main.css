@@ -293,8 +293,8 @@ font-size: clamp(2rem, 5vw, 3.5rem);
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   background-color: #000000 !important;
   z-index: 999999;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  /* padding-top: 15px;
+  padding-bottom: 15px; */
 }
 
 /* mobile navbar */
@@ -456,10 +456,10 @@ font-size: clamp(2rem, 5vw, 3.5rem);
 }
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
-  .navbar {
+  /* .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
+  } */
   .navbar .container {
     position: relative;
   }
