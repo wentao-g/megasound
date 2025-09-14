@@ -84,7 +84,14 @@ h6 {
   --bs-btn-disabled-border-color: #eb5939;
 }
 
-/* banner */
+/* --- Background image --- */
+.carousel-item > img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --- Overlay layer --- */
 .carousel-item .overlay {
   position: absolute;
   top: 0;
@@ -95,16 +102,12 @@ h6 {
   z-index: 1;
 }
 
-.carousel-item img {
-  height: 100vh;
-  object-fit: cover;
-}
-
+/* --- Caption container --- */
 .carousel-item .carousel-caption {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   z-index: 2;
   color: #fff;
   max-width: 90%;
@@ -112,23 +115,30 @@ h6 {
   padding: 20px;
 }
 
+
+/* --- Logo inside caption --- */
+.carousel-caption .carousel-logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  max-width: clamp(100px, 15vw, 250px); /* responsive */
+  height: auto;
+}
+
+/* --- Text styling --- */
 .carousel-item .carousel-caption .lead {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-
 }
 
 .carousel-item .carousel-caption h2 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-color: transparent;
   font-family: "Zeyada", Sans-serif !important;
-    font-weight: 600;
-font-size: clamp(2rem, 5vw, 3.5rem); 
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3.5rem); 
   border-radius: 10px;
 }
 
 .carousel-item .carousel-caption .intro {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-color: transparent;
   font-size: clamp(0.9rem, 2vw, 1.2rem);
   line-height: 2;
   border-radius: 10px;
