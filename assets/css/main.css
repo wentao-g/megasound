@@ -91,6 +91,12 @@ h6 {
   object-fit: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-item > img {
+    height: 75vh; /* 70% of viewport height for tablets */
+  }
+}
+
 /* --- Overlay layer --- */
 .carousel-item .overlay {
   position: absolute;
