@@ -1,0 +1,66 @@
+/* ================================
+   Variables
+================================ */
+$marquee-color: #eb5939;
+$marquee-font-family: "Geostar Fill", serif;
+$marquee-font-size: 400px;
+$marquee-font-weight: 400;
+$marquee-line-height: 0;
+$marquee-text-transform: uppercase;
+$marquee-padding-y: 140px;
+
+$marquee-speed-default: 57s;
+$marquee-speed-slow: 300s;
+
+/* ================================
+   Marquee Wrapper
+================================ */
+.marquee-wrapper {
+  overflow: hidden;
+
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    transform: translate3d(0%, 0, 0);
+    animation-name: marquee;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: $marquee-speed-default;
+
+    &.speed-300 {
+      animation-duration: $marquee-speed-slow;
+    }
+
+    .monogram {
+      color: $marquee-color;
+      text-align: center;
+      font-family: $marquee-font-family;
+      font-size: $marquee-font-size;
+      font-style: normal;
+      font-weight: $marquee-font-weight;
+      line-height: $marquee-line-height;
+      text-transform: $marquee-text-transform;
+      padding: $marquee-padding-y 0;
+      display: inline-block;
+    }
+  }
+
+  &:hover {
+    .marquee {
+      animation-play-state: paused;
+    }
+  }
+}
+
+/* ================================
+   Keyframes
+================================ */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="assets/css/scrollCue.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Favicon -->
     <link
       rel="icon"
@@ -30,7 +29,7 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-        <img
+          <img
             src="/assets/images/mega-sound-transparent.png"
             alt="Mega Sound Logo"
             width="65"
@@ -57,7 +56,9 @@
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="equiqment-rental.html"
+                >Equiqment Rental</a
+              >
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -170,7 +171,9 @@
             <a href="index.html" class="nav-link"> Home </a>
           </li>
           <li class="mobile-menu-list">
-            <a href="services.html" class="nav-link"> Services </a>
+            <a href="equiqment-rental.html" class="nav-link">
+              Equiqment Rental
+            </a>
 
             <ul class="mobile-menu-items">
               <li>
@@ -241,9 +244,9 @@
             alt="..."
           />
           <div class="overlay"></div>
-          <div class="carousel-caption col-12 col-sm-5">
+          <div class="carousel-caption col-12 col-md-8 col-lg-6">
             <h2 class="w-auto">Contact Us</h2>
-            <p class="lead my-5">Get in touch with Mega Sound AVL-SG</p>
+            <p class="lead my-xl-5">Get in touch with Mega Sound AVL-SG</p>
             <p class="intro">
               Whether you have questions about our services, need a quote, or
               want to discuss your next event, we are here to help. Reach out
@@ -260,14 +263,25 @@
         <div class="col-lg-6">
           <div class="contact-us-form ms-lg-auto" style="max-width: 578px">
             <h3>Get In Touch</h3>
-            <form>
+            <form id="contact-form">
+              <input
+                type="hidden"
+                name="access_key"
+                value="d00bb770-62c2-4a0a-872b-d68637e276df"
+              />
+              <input type="hidden" name="from_name" value="MegaSound Enquiry">
+              <div class="captcha-wrapper">
+                <div class="h-captcha" data-theme="dark" data-captcha="true"></div>
+              </div>
               <div class="form-group">
                 <label class="label">Your Name</label>
                 <div class="position-relative">
                   <input
                     type="text"
+                    name="name"
                     class="form-control"
                     placeholder="Enter your name"
+                    required
                   />
                   <i class="ri-user-3-line form-icon"></i>
                 </div>
@@ -277,8 +291,10 @@
                 <div class="position-relative">
                   <input
                     type="email"
+                    name="email"
                     class="form-control"
                     placeholder="Enter email address"
+                    required
                   />
                   <i class="ri-mail-line form-icon"></i>
                 </div>
@@ -287,15 +303,22 @@
                 <label class="label">Your Message</label>
                 <div class="position-relative">
                   <textarea
+                    name="message"
                     class="form-control"
                     rows="4"
                     placeholder="Your message here"
+                    required
                   ></textarea>
                   <i class="ri-message-2-line form-icon" style="top: 30px"></i>
                 </div>
               </div>
-              <a type="submit" class="btn btn-primary py-3"> SEND MESSAGE </a>
+
+              <button type="submit" class="btn btn-primary py-3">
+                SEND MESSAGE
+              </button>
             </form>
+
+            <div id="statusMessage" class="mt-3 text-success"></div>
           </div>
         </div>
 
@@ -307,7 +330,7 @@
                 <h5 class="mb-3">Phone</h5>
                 <div class="d-flex align-items-center">
                   <i class="ri-phone-line fs-3 me-3"></i>
-                  <span class="fw-bold">+65 1234 5678</span>
+                  <span class="fw-bold">+(65) 84657311</span>
                 </div>
               </div>
             </div>
@@ -316,7 +339,7 @@
                 <h5 class="mb-3">Email</h5>
                 <div class="d-flex align-items-center">
                   <i class="ri-mail-send-line fs-3 me-3"></i>
-                  <span class="fw-bold">info@company.com</span>
+                  <span class="fw-bold">megasoundavl@gmail.com</span>
                 </div>
               </div>
             </div>
@@ -336,7 +359,7 @@
 
     <!-- Follow Us -->
     <div
-      class="card bg-dark text-white d-flex justify-content-center align-items-center text-center py-5"
+      class="card text-white d-flex justify-content-center align-items-center text-center py-5"
     >
       <div class="p-4" data-cues="zoomIn">
         <h5 class="card-title mb-3 fs-3 fw-bold">Follow Us</h5>
@@ -470,7 +493,9 @@
                   <h3>Company</h3>
                   <ul class="p-0 mb-0 list-unstyled info-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li>
+                      <a href="equiqment-rental.html">Equiqment Rental</a>
+                    </li>
                     <li><a href="courses.html">Courses </a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -481,7 +506,7 @@
 
               <div class="col-sm-3">
                 <div class="footer-widget">
-                  <h3>Our Services</h3>
+                  <h3>Equiqment Rental</h3>
                   <ul class="p-0 mb-0 list-unstyled info-links">
                     <li>
                       <a href="sound-and-conference-system.html"
@@ -574,6 +599,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/custom.js" type="module"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>

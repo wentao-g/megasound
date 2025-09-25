@@ -1,0 +1,52 @@
+/* ================================
+   Variables
+================================ */
+$whatsapp-bg: #25d366;
+$whatsapp-color: #fff;
+$whatsapp-size: 60px;
+$whatsapp-font-size: 28px;
+
+$whatsapp-spacing-bottom: 20px;
+$whatsapp-spacing-right: 20px;
+$whatsapp-move-up: 100px;
+
+$whatsapp-radius: 50%;
+$whatsapp-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+$whatsapp-z-index: 9999;
+
+$whatsapp-transition: bottom 0.3s ease, transform 0.2s ease;
+$whatsapp-hover-scale: 1.1;
+
+/* ================================
+   WhatsApp Button
+================================ */
+#whatsapp-button {
+  position: fixed;
+  bottom: $whatsapp-spacing-bottom;
+  right: $whatsapp-spacing-right;
+  background: $whatsapp-bg;
+  color: $whatsapp-color;
+  border-radius: $whatsapp-radius;
+  width: $whatsapp-size;
+  height: $whatsapp-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: $whatsapp-font-size;
+  box-shadow: $whatsapp-shadow;
+  z-index: $whatsapp-z-index;
+  text-decoration: none;
+  transition: $whatsapp-transition;
+
+  &.move-up {
+    bottom: $whatsapp-move-up;
+  }
+}
+
+/* ================================
+   Hover Effects
+================================ */
+#whatsapp-button:hover,
+#backtotop:hover {
+  transform: scale($whatsapp-hover-scale);
+}

@@ -16,10 +16,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
-
     <link rel="stylesheet" href="assets/css/remixicon.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/visual-displays.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Favicon -->
     <link
@@ -36,7 +34,7 @@
     <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-        <img
+          <img
             src="/assets/images/mega-sound-transparent.png"
             alt="Mega Sound Logo"
             width="65"
@@ -63,7 +61,9 @@
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="services.html">Services</a>
+              <a class="nav-link" href="equiqment-rental.html"
+                >Equiqment Rental</a
+              >
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -157,9 +157,9 @@
             alt="Our Services Banner"
           />
           <div class="overlay"></div>
-          <div class="carousel-caption col-12 col-sm-6">
+          <div class="carousel-caption col-12 col-md-8 col-lg-6">
             <h2 class="w-auto">LED Wall & Projector</h2>
-            <p class="lead my-5">
+            <p class="lead my-xl-5">
               Stunning visuals that bring your event to life
             </p>
             <p class="intro">
@@ -176,9 +176,9 @@
             alt="Our Services Banner"
           />
           <div class="overlay"></div>
-          <div class="carousel-caption col-12 col-sm-6">
+          <div class="carousel-caption col-12 col-md-8 col-lg-6">
             <h2 class="w-auto">Truss System</h2>
-            <p class="lead my-5">
+            <p class="lead my-xl-5">
               Strong, reliable structures for every event setup
             </p>
             <p class="intro">
@@ -226,7 +226,9 @@
             <a href="index.html" class="nav-link"> Home </a>
           </li>
           <li class="mobile-menu-list">
-            <a href="services.html" class="nav-link"> Services </a>
+            <a href="equiqment-rental.html" class="nav-link">
+              Equiqment Rental
+            </a>
 
             <ul class="mobile-menu-items">
               <li>
@@ -284,101 +286,104 @@
     <!-- end mobile navbar -->
 
     <!-- intro for LED Wall and Projector & Truss system -->
-    <div class="container content-area-1 d-none d-lg-block">
-      <div class="row">
-        <div
-          class="col-lg-6 d-flex align-items-center title col-12"
-          data-cue="slideInLeft"
-        >
-          <h1>LED Wall & Projector with Truss Systems for Stunning Visuals</h1>
-        </div>
-        <div
-          class="col-3 image-stack d-flex flex-column justify-content-center"
-          data-cues="fadeIn"
-        >
-          <img src="assets/images/led-wall-1.avif" class="img img-1" />
-          <img src="assets/images/led-video-wall.jpg" class="img img-2" />
-          <img src="assets/images/truss-system.jpg" class="img img-3" />
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-6 col-12" data-cue="zoomIn">
-          We provide advanced
-          <span class="text-primary">LED Wall & Projector</span> and
-          <span class="text-primary">Truss system</span>
-          solutions designed to elevate your event visuals to the next level.
-          Whether it’s a corporate presentation, live concert, wedding, or
-          large-scale festival, our systems ensure vibrant displays, stable
-          structures, and seamless integration with your event setup. From
-          high-resolution LED panels to professional-grade projectors mounted on
-          sturdy trusses, <span class="text-primary">Mega Sound</span>
-          delivers eye-catching visuals with reliability and precision.
-        </div>
-      </div>
-    </div>
+    <section class="services-section py-5">
+      <div class="px-5">
+        <div class="row align-items-center">
+          <!-- Left Column -->
+          <div class="col-lg-4 mb-4 mb-lg-0" data-cue="slideInLeft">
+            <div class="services-info">
+              <span class="subheading text-uppercase text-primary fw-semibold"
+                >Our Equiqment Rental</span
+              >
+              <h1 class="display-6 fw-bold mb-3">
+                LED Wall & Projector with Truss Systems for Stunning Visuals
+              </h1>
+              <p class="text-muted mb-4">
+                We provide advanced
+                <span class="text-primary">LED Wall & Projector</span> and
+                <span class="text-primary">Truss system</span>
+                solutions designed to elevate your event visuals to the next
+                level. Whether it’s a corporate presentation, live concert,
+                wedding, or large-scale festival, our systems ensure vibrant
+                displays, stable structures, and seamless integration with your
+                event setup. From high-resolution LED panels to
+                professional-grade projectors mounted on sturdy trusses,
+                <span class="text-primary">Mega Sound</span>
+                delivers eye-catching visuals with reliability and precision.
+              </p>
+            </div>
+          </div>
 
-    <!-- Mobile version -->
-    <div class="container content-area-1 d-block d-lg-none text-center">
-      <div class="row mb-4">
-        <div class="col-12" data-cue="slideInLeft">
-          <h1>LED Wall & Projector with Truss Systems for Stunning Visuals</h1>
+          <div class="col-lg-8">
+            <div class="swiper services-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0 shadow product-card">
+                    <img
+                      src="assets/images/visual-display/led-wall.jpeg"
+                      class="card-img-top rounded-top"
+                      alt="LED Wall"
+                    />
+                    <div class="card-body p">
+                      <h5 class="card-title fw-bold">LED Wall</h5>
+                      <p class="card-text text-muted">
+                        Mega Sound AVL-SG's LED walls deliver high-impact
+                        visuals for concerts, shows, and corporate events.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0 shadow product-card">
+                    <img
+                      src="assets/images/visual-display/projector.jpg"
+                      class="card-img-top rounded-top"
+                      alt="Projector"
+                    />
+                    <div class="card-body p">
+                      <h5 class="card-title fw-bold">Projector</h5>
+                      <p class="card-text text-muted">
+                        Mega Sound AVL-SG's projectors deliver high-quality
+                        visuals for impactful presentations and immersive
+                        events.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row mb-4" data-cue="zoomIn">
-        <div class="col-12">
-          <p>
-            We provide advanced
-            <span class="text-primary">LED Wall & Projector</span> and
-            <span class="text-primary">Truss system</span>
-            solutions designed to elevate your event visuals to the next level.
-            Whether it’s a corporate presentation, live concert, wedding, or
-            large-scale festival, our systems ensure vibrant displays, stable
-            structures, and seamless integration with your event setup. From
-            high-resolution LED panels to professional-grade projectors mounted
-            on sturdy trusses, <span class="text-primary">Mega Sound</span>
-            delivers eye-catching visuals with reliability and precision.
-          </p>
-        </div>
-      </div>
-      <div class="row gap-3" data-cues="fadeIn">
-        <div class="col-12 mb-3 d-flex justify-content-center">
-          <img src="assets/images/led-wall-1.avif" class="mobile-img" />
-        </div>
-        <div class="col-12 mb-3 d-flex justify-content-center">
-          <img src="assets/images/led-video-wall.jpg" class="mobile-img" />
-        </div>
-        <div class="col-12 mb-3 d-flex justify-content-center">
-          <img src="assets/images/truss-system.jpg" class="mobile-img" />
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- LED Wall and Projector area -->
-    <div id="led-projector">
+    <div class="content-area-2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('assets/images/stage-lighting-detail-bg.jpg');">
       <!-- Why use our services article / div -->
       <div
-        class="container-fluid py-5 content-area-2 d-flex align-items-center"
+        class="container-fluid py-5 d-flex align-items-center"
       >
         <div class="row justify-content-center">
           <div class="col-12 col-lg-8 text-center">
             <h2 class="mb-4" data-cue="slideInLeft">
-              Transform Your Event with Stunning Visuals – Mega Sound
+              LED Walls, Projectors & Truss Systems for Every Event
             </h2>
             <p class="lead" data-cue="zoomIn">
-              In today’s events, visuals matter just as much as sound. From
-              vibrant
-              <strong>LED Walls</strong> to high-definition
-              <strong>Projectors</strong>, impactful displays can captivate your
-              audience, elevate your message, and create unforgettable
-              experiences.
+              Visuals are the centerpiece of modern events. From massive LED
+              walls to high-definition projectors and versatile truss systems,
+              our solutions are built to impress and designed to elevate your
+              stage presence.
             </p>
             <p data-cue="zoomIn">
               At <span class="text-primary">Mega Sound</span>, we provide
-              cutting-edge LED Wall and Projector solutions designed to fit
-              events of any scale. Whether it’s a corporate conference, a
-              wedding, or a large-scale concert, our visual systems ensure
-              crystal-clear presentations, dynamic video displays, and seamless
-              integration with your stage and venue.
+              industry-leading display and staging equipment tailored to your
+              needs. Whether it’s a corporate conference, wedding, exhibition,
+              or live show, our LED walls deliver stunning clarity, our
+              projectors ensure bright and crisp visuals, and our truss systems
+              provide safe, flexible support for your setup.
             </p>
             <ul
               class="row list-unstyled text-center mt-4 mb-4 justify-content-center"
@@ -395,26 +400,26 @@
                 <div class="icon-box mb-2">
                   <span class="material-symbols-outlined">videocam</span>
                 </div>
-                <strong>Professional-grade projectors</strong>
+                <strong>Bright & reliable projectors</strong>
               </li>
 
               <li class="col-5 col-lg-3 feature-box">
                 <div class="icon-box mb-2">
                   <span class="material-symbols-outlined">build</span>
                 </div>
-                <strong>Custom truss setups</strong>
+                <strong>Customizable truss structures</strong>
               </li>
 
               <li class="col-5 col-lg-3 feature-box">
                 <div class="icon-box mb-2">
                   <span class="material-symbols-outlined">verified</span>
                 </div>
-                <strong>Reliable performance</strong>
+                <strong>Safe & professional installation</strong>
               </li>
             </ul>
             <p class="mt-4" data-cue="zoomIn">
-              With Mega Sound’s LED Walls and Projectors, your event won’t just
-              be seen — it will be remembered.
+              With Mega Sound’s LED Walls, Projectors, and Truss Systems, your
+              event will look professional, dynamic, and unforgettable.
             </p>
           </div>
         </div>
@@ -494,7 +499,9 @@
       <div class="row text-center" data-cue="slideInLeft">
         <span
           >Common ask question about
-          <strong class="text-primary">LED Wall and Projector</strong></span
+          <strong class="text-primary"
+            >LED Wall and Projector & Truss System</strong
+          ></span
         >
       </div>
       <div class="accordion pt-3" id="accordionLedProjector" data-cue="zoomIn">
@@ -563,186 +570,9 @@
       </div>
     </div>
 
-    <!-- truss system area -->
-    <div id="truss">
-      <!-- Why use our services article / div -->
-      <div
-        class="container-fluid py-5 content-area-2 d-flex align-items-center"
-      >
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 text-center">
-            <h2 class="mb-4" data-cue="slideInLeft">
-              Strong Foundations for Every Event – Truss Systems by Mega Sound
-            </h2>
-            <p class="lead" data-cue="zoomIn">
-              A successful event starts with a solid structure. Whether it’s a
-              concert stage, exhibition booth, or outdoor festival, a
-              professional truss system provides the strength, stability, and
-              flexibility needed to support lighting, LED walls, and sound
-              equipment.
-            </p>
-            <p data-cue="zoomIn">
-              At <span class="text-primary">Mega Sound</span>, we supply safe,
-              durable, and versatile truss systems tailored to your event’s
-              design. From simple stage setups to large-scale productions, our
-              trussing solutions are engineered for reliability, easy assembly,
-              and seamless integration with your technical equipment.
-            </p>
-            <ul
-              class="row list-unstyled text-center mt-4 mb-4 justify-content-center"
-              data-cues="slideInUp"
-            >
-              <li class="col-5 col-lg-3 feature-box">
-                <div class="icon-box mb-2">
-                  <span class="material-symbols-outlined">architecture</span>
-                </div>
-                <strong>Durable & safe structures</strong><br />
-              </li>
-              <li class="col-5 col-lg-3 feature-box">
-                <div class="icon-box mb-2">
-                  <span class="material-symbols-outlined">construction</span>
-                </div>
-                <strong>Flexible design options</strong><br />
-              </li>
-              <li class="col-5 col-lg-3 feature-box">
-                <div class="icon-box mb-2">
-                  <span class="material-symbols-outlined"
-                    >precision_manufacturing</span
-                  >
-                </div>
-                <strong>Quick & efficient setup</strong><br />
-              </li>
-              <li class="col-5 col-lg-3 feature-box">
-                <div class="icon-box mb-2">
-                  <span class="material-symbols-outlined">verified</span>
-                </div>
-                <strong>Trusted reliability</strong><br />
-              </li>
-            </ul>
-            <p class="mt-4" data-cue="zoomIn">
-              With Mega Sound’s truss systems, your event gets a strong
-              foundation that is safe, professional, and built to impress.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Related Past Projects images -->
-      <div class="content-area-3 container pb-5">
-        <ul
-          class="row list-unstyled justify-content-center g-4"
-          data-cues="slideInUp"
-        >
-          <li class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
-            <div
-              class="image-box text-center"
-              style="box-shadow: rgba(227, 147, 11, 0.56) 0px 30px 43px 0px"
-            >
-              <img
-                src="assets/images/conference-system.jpg"
-                alt="Audio Equipment Rental"
-              />
-              <h3 class="image-title">Lorem, ipsum dolor.</h3>
-            </div>
-          </li>
-          <li class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
-            <div
-              class="image-box text-center"
-              style="box-shadow: rgba(227, 147, 11, 0.56) 0px 30px 43px 0px"
-            >
-              <img
-                src="assets/images/conference-system.jpg"
-                alt="Audio Equipment Rental"
-              />
-              <h3 class="image-title">Lorem, ipsum dolor.</h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- FAQ -->
-    <div class="container p-5">
-      <div class="row text-center" data-cue="slideInLeft">
-        <h2>Frequently Ask Questions(FAQ)</h2>
-      </div>
-      <div class="row text-center" data-cue="slideInLeft">
-        <span
-          >Common ask question about
-          <strong class="text-primary">Truss System</strong></span
-        >
-      </div>
-      <div
-        class="accordion pt-3"
-        id="accordionPanelsStayOpenExample"
-        data-cue="zoomIn"
-      >
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingTwo"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
-              aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
-            >
-              Accordion Item #3
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="panelsStayOpen-headingThree"
-          >
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Call to Action  -->
     <div
-      class="card bg-dark text-white d-flex justify-content-center align-items-center text-center py-5"
+      class="card text-white d-flex justify-content-center align-items-center text-center py-5"
     >
       <div class="p-4" data-cues="zoomIn">
         <h5 class="card-title mb-3 fs-3 fw-bold">
@@ -765,7 +595,7 @@
     </div>
 
     <!-- More services  -->
-    <div class="top-podcast-area py-5">
+    <div class="more-services-area py-5">
       <div class="container">
         <div class="section-title text-start ms-0 mb-38" data-cues="slideInUp">
           <h3>More Services</h3>
@@ -777,10 +607,10 @@
           </p>
         </div>
 
-        <div class="top-podcast-wrap" data-cues="slideInUp">
+        <div class="more-services-wrap" data-cues="slideInUp">
           <div class="col-lg-25">
-            <div class="top-podcast-single-item position-relative">
-              <div class="top-podcast-content">
+            <div class="more-services-single-item position-relative">
+              <div class="more-services-content">
                 <h3>Sound & Conference System</h3>
               </div>
               <div
@@ -796,8 +626,8 @@
             </div>
           </div>
           <div class="col-lg-25">
-            <div class="top-podcast-single-item position-relative">
-              <div class="top-podcast-content">
+            <div class="more-services-single-item position-relative">
+              <div class="more-services-content">
                 <h3>Support Services</h3>
               </div>
               <div
@@ -813,8 +643,8 @@
             </div>
           </div>
           <div class="col-lg-25">
-            <div class="top-podcast-single-item position-relative">
-              <div class="top-podcast-content">
+            <div class="more-services-single-item position-relative">
+              <div class="more-services-content">
                 <h3>Lighting Solution</h3>
               </div>
               <div
@@ -901,7 +731,9 @@
                   <h3>Company</h3>
                   <ul class="p-0 mb-0 list-unstyled info-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li>
+                      <a href="equiqment-rental.html">Equiqment Rental</a>
+                    </li>
                     <li><a href="courses.html">Courses </a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -912,7 +744,7 @@
 
               <div class="col-sm-3">
                 <div class="footer-widget">
-                  <h3>Our Services</h3>
+                  <h3>Equiqment Rental</h3>
                   <ul class="p-0 mb-0 list-unstyled info-links">
                     <li>
                       <a href="sound-and-conference-system.html"

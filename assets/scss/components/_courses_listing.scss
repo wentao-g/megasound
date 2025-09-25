@@ -1,0 +1,134 @@
+.course-single-item {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(60px);
+  padding: 35px;
+  padding-right: 0;
+  margin-bottom: 30px;
+  position: relative;
+
+  .course-img {
+    overflow: hidden;
+  }
+
+  img {
+    max-width: 341px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .course-date {
+    margin-top: 25px;
+
+    .date {
+      color: #eb5939;
+      font-family: "Righteous", serif;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 115%;
+      letter-spacing: -1.28px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .year {
+      color: #eb5939;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .course-content {
+    margin-top: 10px;
+
+    .title {
+      font-family: "Righteous", serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 166.667%;
+      letter-spacing: 0.36px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    h3,
+    .h3 {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 93.75%;
+      letter-spacing: -0.64px;
+      margin-bottom: 15px;
+      transition: all ease 0.5s;
+    }
+
+    .time {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: normal;
+      display: block;
+      margin-bottom: 35px;
+    }
+  }
+
+  &:hover {
+    .course-content {
+      h3,
+      .h3 {
+        color: #eb5939;
+      }
+    }
+  }
+
+  /* Responsive: Max width 767px */
+  @media only screen and (max-width: 767px) {
+    padding: 20px;
+
+    .course-date {
+      margin: 0 0 20px;
+
+      .date {
+        font-size: 50px;
+        margin-bottom: 0;
+      }
+    }
+
+    .course-content {
+      margin: 0;
+
+      .title {
+        font-size: 16px;
+      }
+
+      h3,
+      .h3 {
+        font-size: 24px;
+      }
+
+      .d-flex.align-items-center.justify-content-center {
+        gap: 20px;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+
+  /* Responsive: Min width 768px to Max width 991px */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    padding: 30px;
+
+    .course-date {
+      margin: 0 0 20px;
+    }
+
+    .course-content {
+      margin: 0;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+  }
+}

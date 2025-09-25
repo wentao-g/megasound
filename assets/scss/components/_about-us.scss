@@ -1,129 +1,78 @@
-/* About Us Area Style
-============================================*/
+/* ================================
+   Variables
+================================ */
+$primary: #eb5939; // main brand color
+$font-family-heading: "Righteous", serif;
+$font-size-base: 16px;
+$line-height-base: 28px;
+
+/* Responsive Breakpoints */
+$bp-sm: 767px;
+$bp-md: 991px;
+$bp-lg: 1199px;
+
+/* Font sizes for About Us heading */
+$h2-font-lg: 64px;
+$h2-font-md: 50px;
+$h2-font-tablet: 40px;
+$h2-font-mobile: 30px;
+
+/* ================================
+   About Us Area Style
+================================ */
+.more-about-btn {
+  font-family: $font-family-heading;
+  display: block;
+  text-align: center;  
+  text-decoration: none;
+  // color: #a0a0a0;
+}
+
 .about-us-content {
-    margin: -8px 0;
-    .about-title {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px; 
-        font-family: $heading-font-family;
-        display: block;
-        margin-bottom: 24px;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: $line-height-base;
+  font-family: $font-family-heading;
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+
+  h2 {
+    font-size: $h2-font-lg;
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: -1.28px;
+    margin-bottom: 0;
+
+    span {
+      color: $primary;
     }
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
+@media only screen and (max-width: $bp-sm) {
+  .about-us-content {
     h2 {
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -1.28px;
-        margin-bottom: 0;
-        span {
-            color: $primary;
-        }
+      font-size: $h2-font-mobile;
     }
-}
-.about-content-top {
-    max-width: 850px;
-    margin: auto;
-    h1 {
-        color: $primary;
-        font-size: 250px;
-        font-weight: 400;
-        line-height: 0;
-        letter-spacing: -5px;
-        margin-bottom: 0;
-    }
-    p {
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 133.333%;
-    }
-}
-.about-content {
-    max-width: 850px;
-    margin: auto;
-    h3 {
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 88.889%;
-        letter-spacing: 1.44px;
-        margin-bottom: 25px;
-    }
-    .count {
-        font-family: $heading-font-family;
-        font-weight: 400;
-        line-height: 160%; /* 160% */
-        letter-spacing: 0.4px;
-        position: relative;
-        top: 4px;
-        padding-right: 10px;
-    }
-    p {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 32px;
-        .title {
-            font-family: $heading-font-family;
-            font-weight: 400;
-            line-height: 160%; /* 160% */
-            letter-spacing: 0.4px;
-        }
-    }
-    ul {
-        li {
-            font-size: 20px;
-            font-weight: 500;
-            line-height: 32px;
-        }
-    }
+  }
 }
 
-/* Max width 767px */
-@media only screen and (max-width : 767px) {
-
-    .about-us-content {
-        .about-title {
-            margin-bottom: 15px;
-        }
-        h2 {
-            font-size: 30px;
-        }
+@media only screen and (min-width: 768px) and (max-width: $bp-md) {
+  .about-us-content {
+    h2 {
+      font-size: $h2-font-tablet;
     }
-    .about-content-top {
-        h1 {
-            font-size: 50px;
-            line-height: normal;
-        }
-        p {
-            font-size: 20px;
-        }
-    }
-
+  }
 }
 
-/* Min width 768px to Max width 992px */
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-
-    .about-us-content {
-        .about-title {
-            margin-bottom: 15px;
-        }
-        h2 {
-            font-size: 40px;
-        }
+@media only screen and (min-width: 992px) and (max-width: $bp-lg) {
+  .about-us-content {
+    h2 {
+      font-size: $h2-font-md;
     }
-
-}
-
-/* Min width 992px to Max width 1199px */
-@media only screen and (min-width : 992px) and (max-width : 1199px)  {
-
-    .about-us-content {
-        .about-title {
-            margin-bottom: 15px;
-        }
-        h2 {
-            font-size: 50px;
-        }
-    }
-
+  }
 }

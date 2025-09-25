@@ -1,0 +1,122 @@
+/* ================================
+   Variables
+================================ */
+$carousel-overlay-bg: rgba(0, 0, 0, 0.5);
+
+$carousel-text-color: #fff;
+$carousel-padding: 20px;
+$carousel-radius: 10px;
+
+$carousel-logo-min: 100px;
+$carousel-logo-max: 250px;
+$carousel-logo-clamp: clamp($carousel-logo-min, 15vw, $carousel-logo-max);
+
+$carousel-lead-font: clamp(1rem, 2.5vw, 1.5rem);
+
+$carousel-h2-font: clamp(2rem, 5vw, 3.5rem);
+$carousel-h2-font-family: "Zeyada", Sans-serif;
+$carousel-h2-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+$carousel-intro-font: clamp(0.9rem, 2vw, 1.2rem);
+$carousel-intro-bg: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+$carousel-intro-line-height: 2;
+$carousel-intro-padding: clamp(12px, 2vw, 16px);
+
+.carousel-item > img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  animation: zoomEffect 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .carousel-item > img {
+    height: 75vh;
+  }
+}
+
+/* ================================
+   Carousel Styles
+================================ */
+
+/* --- Overlay layer --- */
+.carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $carousel-overlay-bg;
+  z-index: 1;
+}
+
+/* --- Caption container --- */
+.carousel-item .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  z-index: 2;
+  color: $carousel-text-color;
+  max-width: 90%;
+  text-align: center;
+  padding: $carousel-padding;
+}
+
+/* --- Logo inside caption --- */
+.carousel-caption .carousel-logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  max-width: $carousel-logo-clamp;
+  height: auto;
+}
+
+/* --- Text styling --- */
+.carousel-item .carousel-caption .lead {
+  font-size: $carousel-lead-font;
+}
+
+.carousel-item .carousel-caption h2 {
+  background: $carousel-h2-bg;
+  font-family: $carousel-h2-font-family !important;
+  font-weight: 600;
+  font-size: $carousel-h2-font;
+  border-radius: $carousel-radius;
+}
+
+.carousel-item .carousel-caption .intro {
+  background: $carousel-intro-bg;
+  font-size: $carousel-intro-font;
+  line-height: $carousel-intro-line-height;
+  border-radius: $carousel-radius;
+  padding: $carousel-intro-padding;
+}
+
+/* --- Responsive --- */
+@media (min-width: 992px) {
+  .carousel-item .carousel-caption h2 {
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .carousel-item .carousel-caption .lead {
+    line-height: 1.6;
+  }
+
+  .carousel-item .carousel-caption .intro {
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,83 @@
+// 🎨 Variables
+$color-gray: #a0a0a0;
+$color-accent: #eb5939;
+$transition: all ease 0.5s;
+$border-radius: 20px;
+$font-size-base: 16px;
+$font-size-heading: 20px;
+$letter-spacing: 0.4px;
+$slide-img-size: 75px;
+$marquee-gap: 100px;
+$marquee-speed: 50s;
+
+// 👥 Creators Section
+.creators-title {
+  font-size: $font-size-base;
+  color: $color-gray;
+  margin-bottom: 30px;
+
+  // Override
+  color: $color-accent;
+}
+
+.creators-single-item {
+  img {
+    border-radius: $border-radius;
+  }
+
+  h4,
+  .h4 {
+    font-size: $font-size-heading;
+    line-height: normal;
+    letter-spacing: $letter-spacing;
+    margin-bottom: 10px;
+    transition: $transition;
+  }
+
+  &:hover {
+    h4,
+    .h4 {
+      color: $color-accent;
+    }
+  }
+}
+
+// 🎞️ Marquee Slider
+.marquee-slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+
+  .slide-track {
+    animation: auto-scroll $marquee-speed linear infinite;
+    display: flex;
+    padding: 0 3%;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    img {
+      width: $slide-img-size;
+      height: $slide-img-size;
+      object-fit: fill;
+    }
+  }
+
+  .slide {
+    flex: 0 0 20%;
+    margin-right: $marquee-gap;
+  }
+}
+
+// ⏯️ Keyframes
+@keyframes auto-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

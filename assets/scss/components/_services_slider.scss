@@ -1,0 +1,39 @@
+.services-slider {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 1rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    img {
+      width: 100%;
+      height: 35vh; // fixed height
+      object-fit: fill; // makes all images same size
+      border-radius: 12px 12px 0 0;
+    }
+  }
+
+  .product-card {
+    background-color: #020516;
+    height: 70vh;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: #001133;
+  color: #fff;
+  padding: 12px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &::after {
+    font-size: 16px;
+  }
+}

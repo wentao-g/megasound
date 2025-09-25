@@ -1,116 +1,88 @@
-/* Footer Area Style
-============================================*/
+// 🔹 Variables
+$primary-color: #eb5939;
+$footer-bg: #0b0a0c;
+$text-muted: #a0a0a0;
+$text-light: #a9a3ad;
+$font-heading: "Righteous", serif;
+
 .footer-area {
-    background-color: #0B0A0C;
+  background-color: $footer-bg;
 }
+
 .footer-widget {
-    margin-bottom: 25px;
-    .subscribe-form {
-        margin-bottom: 30px;
-        .form-control {
-            border: 1px solid rgba(160, 160, 160, 0.50);
-            background: rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+
+  h3,
+  .h3 {
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    margin-bottom: 28px;
+  }
+
+  .social-links {
+    li {
+      a {
+        &:hover {
+          i {
+            color: $primary-color;
+          }
         }
-        .subscribe-btn {
-            right: 20px;
-            margin-right: 20px;
+      }
+    }
+  }
+
+  .info-links {
+    li {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        font-weight: 500;
+        color: $text-muted;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary-color;
         }
+      }
     }
-    .social-links {
-        li {
-            a {
-                &:hover {
-                    color: $primary;
-                }
-            }
-        }
-    }
-    h3 {
-        font-size: 18px;
-        letter-spacing: 0.36px;
-        margin-bottom: 28px;
-    }
-    .info-links {
-        li {
-            margin-bottom: 12px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-            a {
-                font-weight: 500;
-                color: $body-color;
-                text-decoration: none;
-                &:hover {
-                    color: $primary;
-                }
-            }
-        }
-    }
+  }
+
+  // 📱 Responsive
+  @media only screen and (max-width: 767px) {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    max-width: 100%;
+  }
 }
+
 .copyright-area {
-    background-color: #0B0A0C;
-    p {
-        color: #A9A3AD;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 73.333%;
-        letter-spacing: 0.3px;
-        padding: 37px 0;
+  background-color: $footer-bg;
+
+  p {
+    color: $text-light;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 73.333%;
+    letter-spacing: 0.3px;
+    padding: 37px 0;
+
+    // 📱 Responsive
+    @media only screen and (max-width: 767px) {
+      padding: 20px 0;
     }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      padding: 25px 0;
+    }
+  }
 }
 
-/* Max width 767px */
-@media only screen and (max-width : 767px) {
-
-    .footer-widget {
-        max-width: 100%;
-    }
-    .copyright-area {
-        p {
-            padding: 20px 0;
-        }
-    }
-
-}
-
-/* Min width 768px to Max width 992px */
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-    
-    .footer-widget {
-        max-width: 100%;
-    }
-    .copyright-area {
-        p {
-            padding: 25px 0;
-        }
-    }
-
-}
-
-/* Min width 992px to Max width 1199px */
-@media only screen and (min-width : 992px) and (max-width : 1199px) {
-    
-    
-
-}
-
-/* Min width 1200px to Max width 1399px */
-@media only screen and (min-width : 1200px) and (max-width : 1399px) {
-
-    
-
-}
-
-/* RTL Area Style
-============================================*/
-.rtl {
-   
-    .footer-widget {
-        .subscribe-form {
-            .subscribe-btn {
-                margin-right: auto;
-                margin-left: 20px;
-            }
-        }
-    }
+.font-family-heading {
+  font-family: $font-heading;
 }

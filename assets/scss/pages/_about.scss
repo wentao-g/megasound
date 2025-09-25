@@ -1,0 +1,48 @@
+// Import Google Font
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+
+// Variables
+$font-zeyada: "Zeyada", sans-serif;
+$bg-dark: rgba(0, 0, 0, 0.9);
+$bg-light: rgba(0, 0, 0, 0.1);
+$color-white: #fff;
+$radius: 10px;
+$padding-lg: 20px;
+
+// Vision Section
+.vision {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 50px;
+  width: 100%;
+
+  h2 {
+    background: linear-gradient($bg-dark, $bg-light);
+    font-family: $font-zeyada !important;
+    font-size: 60px;
+    border-radius: $radius;
+    padding: $padding-lg;
+  }
+
+  .content-wrapper {
+    .content-item {
+      background: $bg-dark;
+      border-radius: $radius;
+    }
+  }
+}
+
+// Material Icons
+.material-icons {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+
+  &::before,
+  &::after {
+    content: "+++";
+    color: $color-white;
+    font-weight: bold;
+  }
+}

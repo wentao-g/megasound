@@ -1,65 +1,7 @@
-/**
-Master Stylesheet – Project "Astral"
-
-Project:        Astral
-Version:        1.0
-Assigned to:    Envytheme
-Primary use:    Underground Music
-
-@File: Astral Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-
-1. Fonts Style
-2. Required Style
-3. Default variable overrides Style
-4. Create your own map Style
-5. Required Utilities Parts Style
-6. Merge the maps Style
-7. Required Style
-8. Optional Bootstrap components here Style
-9. Required Style
-10. Components Style
-11. Color Style
-12. Font Size Style
-13. Global Area Style
-14. Preloader Area Style
-15. backtoptop Area Style
-16. Page-navigation Area Style
-17. Navbar Area Style
-18. Banner Area Style
-19. Footer Area Style
-20. Details Content Area Style
-21. Featured Area Style
-22. Top Music Playlist Area Style
-23. Genres Area Style
-24. Today Tunes Area Style
-25. Artists Area Style
-26. Podcasts And More Area Style
-27. Contact Us Area Style
-28. Play List Area Style
-29. About Us Area Style
-30. Creators Area Style
-31. Top Play Area Style
-32. Top Podcast Area Style
-33. Event Area Style
-34. Submit Music Form Area Style
-35. Authentication Area Style
-36. Podcast Details Area Style
-37. Blog Area Style
-38. Checkout Area Style
-
-*******************************************
-**/
-
 /* Fonts Style
 ============================================*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geostar+Fill&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geostar+Fill&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 
 /* Required Style
 ============================================*/
@@ -68,7 +10,6 @@ This files table contents are outlined below>>>>>
 /* Default variable overrides Style
 ============================================*/
 @import "./variables";
-
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
 @import "../../node_modules/bootstrap/scss/mixins";
@@ -76,38 +17,37 @@ This files table contents are outlined below>>>>>
 /* Create your own map Style
 ============================================*/
 $custom-colors: (
-    "border-color-100": $border-color-100,
-    "body-color-100": $body-color-100,
-    "body-color-200": $body-color-200,
-    "secondary-100": $secondary-100,
+  "border-color-100": $border-color-100,
+  "body-color-100": $body-color-100,
+  "body-color-200": $body-color-200,
+  "secondary-100": $secondary-100,
 );
 $font-sizes: (
-    1: $h1-font-size,
-    2: $h2-font-size,
-    3: $h3-font-size,
-    4: $h4-font-size,
-    5: $h5-font-size,
-    6: $h6-font-size,
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
 );
 
 /* Required Utilities Parts Style
 ============================================*/
 $utilities: (
-    "font-size": (
-        rfs: true,
-        property: font-size,
-        class: fs,
-        values: $font-sizes
-    ),
-    
+  "font-size": (
+    rfs: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes,
+  ),
 );
 
 /* Merge the maps Style
 ============================================*/
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-/* Required Style
-============================================*/
+// /* Required Style
+// ============================================*/
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/root";
 
@@ -120,31 +60,25 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 ============================================*/
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-/* Components Style
-============================================*/
-@import "./components/global";
-@import "./components/preloader";
-@import "./components/backtoptop";
-@import "./components/pagination";
-@import "./components/navbar";
-@import "./components/banner";
-@import "./components/footer";
-@import "./components/details-content";
-@import "./components/featured";
-@import "./components/top-music-playlist";
-@import "./components/genres";
-@import "./components/today-tunes";
-@import "./components/artists";
-@import "./components/podcasts-and-more";
-@import "./components/contact-us";
-@import "./components/play-list";
+/* Components Style */
+@import "./pages/global";
+@import "./pages/about";
+@import "./pages/course";
+@import "./pages/services";
+@import "./pages/support_services";
 @import "./components/about-us";
-@import "./components/creators";
-@import "./components/top-play";
-@import "./components/top-podcast";
-@import "./components/event";
-@import "./components/submit-music";
-@import "./components/authentication";
-@import "./components/podcast-details";
-@import "./components/blog";
-@import "./components/checkout";
+@import "./components/marquee";
+@import "./components/more_services";
+@import "./components/products_slider";
+@import "./components/marquee_slider";
+@import "./components/navbar";
+@import "./components/footer";
+@import "./components/whatsapp_button";
+@import "./components/to_top_button";
+@import "./components/carousel";
+@import "./components/mobile_navbar";
+@import "./components/contact_form";
+@import "./components/products_listing";
+@import "./components/courses_listing";
+@import "./components/services_listing";
+@import "./components/services_slider";

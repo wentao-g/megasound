@@ -34,6 +34,21 @@ window.addEventListener("scroll", function () {
     }
   };
 
+  var swiper = new Swiper(".services-slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: { slidesPerView: 1.3 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 2.5 },
+    },
+  });
+
   var swiper = new Swiper(".artists-slide", {
     slidesPerView: 1,
     spaceBetween: 12,
@@ -147,6 +162,53 @@ function accordion(e) {
     this.classList.add("active");
   }
 }
-for (i = 0; i < list.length; i++) {
+for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", accordion);
 }
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const name = form.querySelector("[name='name']").value.trim();
+  const email = form.querySelector("[name='email']").value.trim();
+  const message = form.querySelector("[name='message']").value.trim();
+
+  if (!name.trim() || !email.trim() || !message.trim()) {
+    alert("Please fill up the form");
+    return;
+  }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    alert("Please enter a valid email address");
+    return;
+  }
+
+  const subject = `${name} sent a message from MegaSound website`;
+
+  const formData = new FormData(form);
+  formData.append("subject", subject);
+  const object = Object.fromEntries(formData);
+  const json = JSON.stringify(object);
+
+  try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: json
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Message sent successfully!");
+      form.reset();
+    } else {
+      alert("Something went wrong: " + result.message);
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("An error occurred. Try again later.");
+  }
+});

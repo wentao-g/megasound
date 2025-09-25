@@ -1,0 +1,38 @@
+/* ================================
+   Variables
+================================ */
+$backtotop-bg: #333;
+$backtotop-color: #fff;
+
+$backtotop-size: 60px;
+$backtotop-radius: 50%;
+$backtotop-font-size: 20px;
+
+$backtotop-spacing-bottom: 20px;
+$backtotop-spacing-right: 20px;
+
+$backtotop-z-index: 999;
+$backtotop-transition: opacity 0.3s, transform 0.2s ease;
+
+/* ================================
+   Back To Top Button
+================================ */
+#backtotop {
+  position: fixed;
+  bottom: $backtotop-spacing-bottom;
+  right: $backtotop-spacing-right;
+  background: $backtotop-bg;
+  color: $backtotop-color;
+  border: none;
+  border-radius: $backtotop-radius;
+  width: $backtotop-size;
+  height: $backtotop-size;
+  cursor: pointer;
+  opacity: 0;
+  transition: $backtotop-transition;
+  z-index: $backtotop-z-index;
+
+  i {
+    font-size: $backtotop-font-size;
+  }
+}

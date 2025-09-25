@@ -1,0 +1,197 @@
+/* ================================
+   Variables
+================================ */
+$top-podcast-transition: all ease 0.5s;
+$top-podcast-border: 1px solid #a0a0a0;
+$top-podcast-radius: 20px;
+
+$top-podcast-title-font: "Righteous", serif;
+$top-podcast-title-size: 20px;
+$top-podcast-title-line: 28px;
+$top-podcast-title-spacing: 0.4px;
+
+$top-podcast-highlight: #eb5939;
+
+/* ================================
+   Top Podcast Area
+================================ */
+.top-podcast-area {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+/* ================================
+   Single Item
+================================ */
+.top-podcast-single-item {
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  border-right: 1px solid rgba(160, 160, 160, 0.3);
+  height: 505px;
+  transition: $top-podcast-transition;
+
+  .bg-img {
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 100%, 0 100%);
+    transition: $top-podcast-transition;
+    z-index: -1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0.1%,
+        rgba(15, 18, 19, 0.85) 80.67%
+      );
+      z-index: -1;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.1%,
+      rgba(15, 18, 19, 0.85) 80.67%
+    );
+    z-index: -1;
+  }
+
+  .top-podcast-content {
+    margin-top: 305px;
+
+    h3,
+    .h3 {
+      font-family: $top-podcast-title-font;
+      font-size: $top-podcast-title-size;
+      font-weight: 400;
+      line-height: $top-podcast-title-line;
+      letter-spacing: $top-podcast-title-spacing;
+      transition: $top-podcast-transition;
+    }
+  }
+
+  &:hover {
+    .bg-img {
+      clip-path: polygon(0 0, 87% 0, 100% 14%, 100% 100%, 0 100%);
+    }
+
+    .top-podcast-content {
+      h3,
+      .h3 {
+        color: $top-podcast-highlight;
+      }
+    }
+  }
+}
+
+/* ================================
+   Wrap
+================================ */
+.top-podcast-wrap {
+  border: $top-podcast-border;
+  border-radius: $top-podcast-radius;
+  overflow: hidden;
+
+  .col-lg-25 {
+    transition: $top-podcast-transition;
+    width: 25%;
+    display: table-cell;
+  }
+
+  &:hover {
+    .col-lg-25 {
+      width: 20%;
+
+      &:hover {
+        width: 40%;
+      }
+    }
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+  .top-podcast-single-item {
+    height: auto;
+
+    .bg-img {
+      opacity: 1;
+    }
+
+    .top-podcast-content {
+      margin-top: 100px;
+    }
+  }
+
+  .top-podcast-wrap .col-lg-25 {
+    width: 100% !important;
+    display: block;
+  }
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .top-podcast-single-item {
+    height: 300px;
+    padding: 15px;
+
+    .bg-img {
+      opacity: 1;
+    }
+
+    .top-podcast-content {
+      margin-top: 100px;
+
+      h3,
+      .h3 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .top-podcast-single-item {
+    height: 300px;
+    padding: 15px;
+
+    .bg-img {
+      opacity: 1;
+    }
+
+    .top-podcast-content {
+      margin-top: 120px;
+
+      h3,
+      .h3 {
+        font-size: 15px;
+      }
+    }
+  }
+}
