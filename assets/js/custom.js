@@ -88,7 +88,6 @@ window.addEventListener("scroll", function () {
     spaceBetween: 24,
     centeredSlides: false,
     preventClicks: true,
-    loop: true,
     centeredSlides: true,
     autoplay: {
       delay: 8000,

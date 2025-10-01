@@ -35,10 +35,11 @@ $transition: all ease 0.5s;
 
     img {
       width: 100%; // take full width of container
-      height: 100%; // take full height
+      // height: 100%; // take full height
       object-fit: fill; // cover the container (no empty space)
       border-radius: 20px;
       transition: $transition;
+      aspect-ratio: 1/1;
       display: block;
     }
   }

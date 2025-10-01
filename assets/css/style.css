@@ -13093,6 +13093,24 @@ textarea.form-control {
 }
 .course .course-image {
   max-width: 100%;
+  aspect-ratio: 2/1;
+  height: 455px;
+  border-radius: 8px;
+}
+.course .course-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.course .course-meta .title,
+.course .course-meta .price {
+  font-size: 18px;
+  font-family: "Righteous", serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
 }
 
 .more-courses .card-custom {
@@ -13595,10 +13613,10 @@ textarea.form-control {
 }
 .podcasts-and-more-single-item .podcasts-and-more-img img {
   width: 100%;
-  height: 100%;
   object-fit: fill;
   border-radius: 20px;
   transition: all ease 0.5s;
+  aspect-ratio: 1/1;
   display: block;
 }
 .podcasts-and-more-single-item .podcasts-and-more-content {
@@ -14343,7 +14361,7 @@ textarea.form-control {
   background: rgba(0, 0, 0, 0.9);
 }
 .blog-single-item .blog-img {
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   border-radius: 20px;
   margin-bottom: 25px;
@@ -14371,10 +14389,10 @@ textarea.form-control {
   max-width: 341px;
   border-radius: 20px 0 0 20px;
 }
-.course-single-item .course-date {
+.course-single-item .course-number {
   margin-top: 25px;
 }
-.course-single-item .course-date .date {
+.course-single-item .course-number .number {
   color: #eb5939;
   font-family: "Righteous", serif;
   font-size: 64px;
@@ -14384,39 +14402,47 @@ textarea.form-control {
   display: block;
   margin-bottom: 5px;
 }
-.course-single-item .course-date .year {
-  color: #eb5939;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: normal;
-}
 .course-single-item .course-content {
   margin-top: 10px;
 }
-.course-single-item .course-content .title {
-  font-family: "Righteous", serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 166.667%;
-  letter-spacing: 0.36px;
-  display: block;
+.course-single-item .course-content h3, .course-single-item .course-content .h3 {
+  font-size: 28px;
   margin-bottom: 12px;
+  transition: all 0.3s ease;
 }
-.course-single-item .course-content h3,
-.course-single-item .course-content .h3 {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 93.75%;
-  letter-spacing: -0.64px;
-  margin-bottom: 15px;
-  transition: all ease 0.5s;
+.course-single-item .course-content .course-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
 }
-.course-single-item .course-content .time {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: normal;
-  display: block;
-  margin-bottom: 35px;
+.course-single-item .course-content .course-meta .title,
+.course-single-item .course-content .course-meta .price {
+  font-size: 18px;
+  font-family: "Righteous", serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .course-single-item .course-content .course-meta .title,
+  .course-single-item .course-content .course-meta .price {
+    text-align: center;
+    display: block;
+  }
+}
+.course-single-item .course-content .course-meta .price {
+  font-weight: 600;
+  font-size: 20px;
+}
+.course-single-item .course-content .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  gap: 8px;
+}
+.course-single-item .course-content .btn i {
+  font-size: 18px;
 }
 .course-single-item:hover .course-content h3,
 .course-single-item:hover .course-content .h3 {

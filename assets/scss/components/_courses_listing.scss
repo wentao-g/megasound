@@ -15,10 +15,10 @@
     border-radius: 20px 0 0 20px;
   }
 
-  .course-date {
+  .course-number {
     margin-top: 25px;
 
-    .date {
+    .number {
       color: #eb5939;
       font-family: "Righteous", serif;
       font-size: 64px;
@@ -28,44 +28,51 @@
       display: block;
       margin-bottom: 5px;
     }
-
-    .year {
-      color: #eb5939;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: normal;
-    }
   }
 
   .course-content {
     margin-top: 10px;
 
-    .title {
-      font-family: "Righteous", serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 166.667%;
-      letter-spacing: 0.36px;
-      display: block;
+    h3 {
+      font-size: 28px;
       margin-bottom: 12px;
+      transition: all 0.3s ease;
     }
 
-    h3,
-    .h3 {
-      font-size: 32px;
-      font-weight: 400;
-      line-height: 93.75%;
-      letter-spacing: -0.64px;
-      margin-bottom: 15px;
-      transition: all ease 0.5s;
+    .course-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+
+      .title,
+      .price {
+        font-size: 18px;
+        font-family: "Righteous", serif;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-align: left; // default for large screens
+        @media (max-width: 991px) {
+          text-align: center;
+          display: block; // ensures proper centering if inside flex
+        }
+      }
+
+      .price {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      
     }
 
-    .time {
-      font-size: 15px;
-      font-weight: 500;
-      line-height: normal;
-      display: block;
-      margin-bottom: 35px;
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      gap: 8px;
+      i {
+        font-size: 18px;
+      }
     }
   }
 
