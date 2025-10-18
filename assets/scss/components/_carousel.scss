@@ -89,7 +89,8 @@ $carousel-intro-padding: clamp(12px, 2vw, 16px);
   font-size: $carousel-lead-font;
 }
 
-.carousel-item .carousel-caption h2 {
+.carousel-item .carousel-caption h2,
+.carousel-item .carousel-caption h1 {
   background: $carousel-h2-bg;
   font-family: $carousel-h2-font-family !important;
   font-weight: 600;
