@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Prevent bots from crawling unnecessary system files or drafts (optional)
+Disallow: /assets/
+
+# Sitemap location
+Sitemap: https://www.mgsavl-sg.com/sitemap.xml
