@@ -14383,6 +14383,8 @@ textarea.form-control {
   padding-right: 0;
   margin-bottom: 30px;
   position: relative;
+  /* Responsive: Max width 767px */
+  /* Responsive: Min width 768px to Max width 991px */
 }
 .course-single-item .course-img {
   overflow: hidden;
@@ -14450,9 +14452,6 @@ textarea.form-control {
 .course-single-item:hover .course-content .h3 {
   color: #eb5939;
 }
-.course-single-item {
-  /* Responsive: Max width 767px */
-}
 @media only screen and (max-width: 767px) {
   .course-single-item {
     padding: 20px;
@@ -14481,9 +14480,6 @@ textarea.form-control {
     max-width: 100%;
     border-radius: 20px;
   }
-}
-.course-single-item {
-  /* Responsive: Min width 768px to Max width 991px */
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .course-single-item {
@@ -14579,10 +14575,11 @@ textarea.form-control {
 .services-slider::-webkit-scrollbar {
   display: none;
 }
-.services-slider .card img {
+.services-slider .card img,
+.services-slider .card video {
   width: 100%;
   height: 35vh;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 12px 12px 0 0;
 }
 .services-slider .product-card {

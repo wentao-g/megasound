@@ -8,12 +8,13 @@
   &::-webkit-scrollbar {
     display: none;
   }
-
+  
   .card {
-    img {
+    img,
+    video {
       width: 100%;
       height: 35vh; // fixed height
-      object-fit: fill; // makes all images same size
+      object-fit: cover; // makes all images same size
       border-radius: 12px 12px 0 0;
     }
   }
