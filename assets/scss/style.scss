@@ -66,6 +66,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "./pages/course";
 @import "./pages/services";
 @import "./pages/support_services";
+@import "./pages/studio_rental";
 @import "./components/about-us";
 @import "./components/marquee";
 @import "./components/more_services";
